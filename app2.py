@@ -1607,11 +1607,7 @@ def ejecutar_modulo3():
             </div>
             """
             st.markdown(f"#### {titulo}")
-            #components.html(
-                #html,
-                #height=height + 10,
-                #scrolling=False
-            #)
+
             st.write("Visualización molecular cargada")
             st.image(img, use_column_width=True)
             

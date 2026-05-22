@@ -1607,11 +1607,12 @@ def ejecutar_modulo3():
             </div>
             """
             st.markdown(f"#### {titulo}")
-            components.html(
-                html,
-                height=height + 10,
-                scrolling=False
-            )
+            #components.html(
+                #html,
+                #height=height + 10,
+                #scrolling=False
+            #)
+            st.image(img, use_column_width=True)
             
         except Exception as e:
             st.error(f"Error al dibujar:\n{e}")

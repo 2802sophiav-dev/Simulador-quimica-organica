@@ -237,7 +237,7 @@ def ejecutar_modulo1():
             st.session_state.susts = []
 
             st.success("Estructura reiniciada")
-            st.rerun()
+            st.experimental_rerun()
 
     # =========================================================
     # MOSTRAR GRUPOS AGREGADOS
@@ -1127,7 +1127,7 @@ def ejecutar_modulo1():
                 reacciones_pool
             )
 
-            st.rerun()
+            st.experimental_rerun()
 
     # =========================================================
     # VALIDACIÓN
@@ -1334,7 +1334,7 @@ def ejecutar_modulo2():
                 st.session_state.idx_densidad + 1
             ) % len(ejercicios_densidad)
 
-            st.rerun()
+            st.experimental_rerun()
 
     # =========================================================
     # TAB 2: ESTABILIDAD DE INTERMEDIOS
@@ -1493,7 +1493,7 @@ def ejecutar_modulo2():
                 st.session_state.idx_intermedio + 1
             ) % len(ejercicios_intermedios)
 
-            st.rerun()
+            st.experimental_rerun()
 
 
 def ejecutar_modulo3():
@@ -1607,7 +1607,11 @@ def ejecutar_modulo3():
             </div>
             """
             st.markdown(f"#### {titulo}")
-            components.html(html, height=height + 10)
+            components.html(
+                html,
+                height=height + 10,
+                scrolling=False
+            )
             
         except Exception as e:
             st.error(f"Error al dibujar:\n{e}")
@@ -2480,7 +2484,7 @@ def ejecutar_modulo3():
                     st.session_state.historial = []
                     st.session_state.feedback = ""
 
-                    st.rerun()
+                    st.experimental_rerun()
 
         # =====================================================
         # FEEDBACK

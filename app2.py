@@ -228,7 +228,7 @@ def ejecutar_modulo1():
             })
 
             st.success("Grupo agregado correctamente")
-            st.rerun()
+            st.experimental_rerun()
 
     with col_b2:
 
@@ -1612,6 +1612,7 @@ def ejecutar_modulo3():
                 #height=height + 10,
                 #scrolling=False
             #)
+            st.write("Visualización molecular cargada")
             st.image(img, use_column_width=True)
             
         except Exception as e:
@@ -2462,7 +2463,7 @@ def ejecutar_modulo3():
 
                             st.session_state.paso += 1
 
-                            st.rerun()
+                            st.experimental_rerun()
 
                         else:
 

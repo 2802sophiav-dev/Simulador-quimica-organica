@@ -18,6 +18,12 @@ try:
 except ImportError:
     RDKIT_DISPONIBLE = False
 
+st.title("Prueba mínima")
+
+st.write("La app funciona")
+
+st.stop()
+
 # ============================================
 # CONFIGURACIÓN DE LA PÁGINA
 # ============================================

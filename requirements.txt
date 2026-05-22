@@ -2,4 +2,4 @@ streamlit
 pillow
 numpy
 pandas
-rdkit-pypi
+rdkit-pypi==2022.9.5

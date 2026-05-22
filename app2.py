@@ -228,7 +228,7 @@ def ejecutar_modulo1():
             })
 
             st.success("Grupo agregado correctamente")
-            st.rerun()
+            # # st.rerun()
 
     with col_b2:
 
@@ -237,7 +237,7 @@ def ejecutar_modulo1():
             st.session_state.susts = []
 
             st.success("Estructura reiniciada")
-            st.rerun()
+            # # st.rerun()
 
     # =========================================================
     # MOSTRAR GRUPOS AGREGADOS
@@ -1127,7 +1127,7 @@ def ejecutar_modulo1():
                 reacciones_pool
             )
 
-            st.rerun()
+            # # st.rerun()
 
     # =========================================================
     # VALIDACIÓN
@@ -1334,7 +1334,7 @@ def ejecutar_modulo2():
                 st.session_state.idx_densidad + 1
             ) % len(ejercicios_densidad)
 
-            st.rerun()
+            # # st.rerun()
 
     # =========================================================
     # TAB 2: ESTABILIDAD DE INTERMEDIOS
@@ -1493,7 +1493,7 @@ def ejecutar_modulo2():
                 st.session_state.idx_intermedio + 1
             ) % len(ejercicios_intermedios)
 
-            st.rerun()
+            # # st.rerun()
 
 
 def ejecutar_modulo3():
@@ -2459,7 +2459,7 @@ def ejecutar_modulo3():
 
                             st.session_state.paso += 1
 
-                            st.rerun()
+                            # # st.rerun()
 
                         else:
 
@@ -2482,7 +2482,7 @@ def ejecutar_modulo3():
                     st.session_state.historial = []
                     st.session_state.feedback = ""
 
-                    st.rerun()
+                    # # st.rerun()
 
         # =====================================================
         # FEEDBACK
